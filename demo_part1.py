@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
 import pandas as pd
 
 from schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
