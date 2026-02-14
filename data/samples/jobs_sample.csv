@@ -1,0 +1,11 @@
+job_id,required_skills,min_experience,required_education,required_languages,required_sector
+J0096,"['teamwork', 'powerpoint', 'business analysis', 'communication']",1.0,bac+5,"['en', 'fr']",consulting
+J0016,"['project management', 'excel', 'communication', 'market research', 'teamwork', 'presentation', 'problem solving']",4.0,bac+5,['fr'],consulting
+J0031,"['presentation', 'communicaion', 'git', 'sql', 'machine learning', 'power bi', 'cloud', 'aws', 'azure', 'docker']",0.0,bac+5,['fr'],it / data
+J0159,"['cloud', 'presentation', 'machine learning', 'azure', 'power bi']",0.0,bac+5,"['en', 'fr']",it / data
+J0129,"['due diligence', 'ifrs', 'data analysis', 'presentation', 'power bi', 'excel', 'internal control', 'consolidation', 'financial analysis']",0.0,bac+5,"['en', 'fr']",audit
+J0116,"['presentation', 'data analysis', 'sap', 'financial analysis']",3.0,bac+5,"['en', 'fr']",audit
+J0070,"['risk assessment', 'power bi', 'presentation', 'accounting']",2.0,bac+5,['fr'],audit
+J0171,"['stakeholder management', 'business analysis', 'excel', 'market research', 'strategy', 'project management', 'data analysis']",0.0,bac+5,"['es', 'fr']",consulting
+J0175,"['risk assessment', 'internal control', 'sap', 'audit', 'ifrs', 'accounting', 'excel', 'data analysis', 'power bi']",0.0,bac+5,['fr'],audit
+J0046,"['excel', 'accounting', 'power bi', 'audit', 'data analysis', 'sap', 'internal control', 'due diligence']",0.0,bac+5,['es'],audit

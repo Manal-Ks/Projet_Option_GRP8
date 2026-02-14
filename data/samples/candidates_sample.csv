@@ -1,0 +1,26 @@
+candidate_id,candidate_skills,years_experience,education_level,languages,sector
+C006253,"['sap', 'data analysis', 'analyse financiere', 'excel', 'power bi', 'internal control', 'audit', 'firs', 'accounting', 'presentation']",0.0,bac+4,"['en', 'es']",audit
+C004685,"['excel', 'data analysis', 'ifrs', 'communication', 'teamwork']",0.0,bac+5,['fr'],audit
+C001732,"['communication', 'data analysis', 'presentation', 'teamwork']",4.0,bac+5,['en'],consulting
+C004743,"['data analysis', 'due diligence', 'accounting', 'excel', 'presentation', 'presenattion']",0.0,bac+5,"['es', 'fr']",audit
+C004522,"['recherche marche', 'powerpoint', 'teamwork', 'stakeholder management', 'data analysis', 'communication', 'strategy', 'excel']",8.0,bac+3,"['en', 'fr']",consulting
+C006341,"['communication', 'presentation', 'srategy', 'excel', 'problem solving', 'market research', 'teamwork', 'stakeholder anagement']",1.0,bac+5,['fr'],consulting
+C000577,"['power bi', 'teamwork', 'presentation', 'financial analysis', 'audit', 'ms excel', 'internal control']",1.0,bac+4,['ar'],audit
+C005203,"['problem solving', 'communication', 'teamwork', 'powerpoint', 'strategy', 'market research']",0.0,bac+5,"['ar', 'fr']",
+C006364,"['problem solving', 'excel', 'powerpoint', 'recherche marche', 'presentation', 'teamwork']",5.0,bac+5,['fr'],consulting
+C000440,"['consolidation', 'accounting', 'audit', 'data analysis', 'financial analysis', 'presentation', 'risk assessment']",0.0,bac+4,['fr'],audit
+C002751,"['presentation', 'aws', 'communication', 'teamwork', 'excel', 'python', 'machine learning']",0.0,bac+5,['en'],it / data
+C007488,"['presentation', 'communication', 'risk assessment', 'excel', 'internla control']",1.0,bac+5,"['en', 'fr']",audit
+C005273,"['internal control', 'accounting', 'communication', 'power bi', 'sap', 'ifrs', 'presentation']",2.0,bac+5,"['es', 'fr']",audit
+C005654,"['problem solving', 'data analysis', 'powerpoint', 'market research', 'communication']",1.0,bac+5,"['en', 'fr']",consulting
+C004000,"['data analysis', 'teamwork', 'financial analysis', 'excel']",0.0,bac+4,['fr'],audit
+C006034,"['presentation', 'data analysis', 'teamwork', 'excle', 'power bi', 'consolidation', 'audit', 'excel', 'communication', 'teawork', 'internal control']",1.0,bac+5,"['en', 'fr']",audit
+C000583,"['teamwork', 'presentation', 'due diligence', 'ifrs', 'consolidation', 'controle interne', 'ms xcel']",0.0,bac+3,['fr'],audit
+C009931,"['data analysis', 'risk assessment', 'excel', 'sap', 'accounting', 'teamwork', 'cmomunication', 'poewr bi', 'internal control', 'communication']",0.0,bac+3,"['en', 'fr']",audit
+C007052,"['ifrs', 'risk assessment', 'presentation', 'controle interne', 'due diligence', 'excel', 'sap', 'communication']",4.0,bac+3,"['ar', 'es']",audit
+C008159,"['due diligence', 'ms excel', 'teamwork', 'accounting', 'power bi', 'data analysis']",1.0,bac+3,['fr'],audit
+C009897,"['presentation', 'machine learning', 'git', 'python', 'excel', 'sql', 'data engineering', 'power bi']",0.0,bac+5,['fr'],it / data
+C002250,"['presentation', 'excel', 'audit', 'teamwork', 'sap', 'accounting']",0.0,bac+3,['fr'],audit
+C004641,"['teamwork', 'machine learning', 'excel', 'cloud', 'spark', 'data analysis', 'git', 'python', 'power bi', 'azure', 'communication']",3.0,bac+5,['es'],it / data
+C009486,"['excel', 'data analysis', 'communication', 'power bi', 'audit', 'teamwork', 'risk assessment', 'consolidation']",0.0,bac+3,"['en', 'fr']",audit
+C004948,"['powerpoint', 'data analysis', 'business analysis', 'problem solving', 'teamwork', 'communication', 'presentation', 'excel']",3.0,bac+3,"['en', 'fr']",consulting

@@ -1,0 +1,201 @@
+job_id,required_skills,min_experience,required_education,required_languages,required_sector
+J0001,"['due diligence', 'audit', 'consolidation', 'presentation', 'internal control', 'data analysis', 'power bi', 'excel', 'financial analysis']",0.0,bac+5,"['en', 'fr']",audit
+J0002,"['excel', 'strategy', 'problem solving', 'stakeholder management', 'business analysis']",0.0,bac+4,"['en', 'fr']",consulting
+J0003,"['presentation', 'powerpoint', 'excel', 'stakeholder management']",0.0,bac+5,"['ar', 'fr']",consulting
+J0004,"['communication', 'business analysis', 'market research', 'data analysis', 'presentation', 'excel', 'project management', 'problem solving', 'powerpoint']",2.0,bac+5,['fr'],consulting
+J0005,"['teamwork', 'internal control', 'data analysis', 'presentation', 'due diligence', 'audit']",0.0,bac+5,"['en', 'fr']",audit
+J0006,"['communication', 'strategy', 'business analysis', 'problem solving']",2.0,bac+5,"['es', 'fr']",consulting
+J0007,"['financial analysis', 'risk assessment', 'accounting', 'data analysis', 'teamwork']",0.0,bac+5,['fr'],audit
+J0008,"['sap', 'communication', 'excel', 'power bi']",2.0,bac+5,"['en', 'fr']",audit
+J0009,"['sql', 'cloud', 'spark', 'communication', 'power bi']",4.0,bac+5,['en'],it / data
+J0010,"['market research', 'communication', 'excel', 'data analysis', 'teamwork', 'strategy']",1.0,bac+5,['fr'],consulting
+J0011,"['financial analysis', 'audit', 'teamwork', 'internal control', 'presentation', 'sap']",0.0,bac+5,"['es', 'fr']",audit
+J0012,"['presentation', 'communication', 'business analysis', 'market research', 'project management', 'teamwork', 'data analysis']",3.0,bac+5,"['ar', 'en']",consulting
+J0013,"['data analysis', 'internal control', 'audit', 'consolidation']",0.0,bac+5,"['es', 'fr']",audit
+J0014,"['excel', 'python', 'data analysis', 'aws', 'git', 'cloud', 'communication', 'teamwork']",3.0,bac+5,['fr'],it / data
+J0015,"['teamwork', 'stakeholder management', 'communication', 'market research', 'project management']",1.0,bac+5,['en'],consulting
+J0016,"['project management', 'excel', 'communication', 'market research', 'teamwork', 'presentation', 'problem solving']",4.0,bac+5,['fr'],consulting
+J0017,"['cloud', 'teamwork', 'git', 'docker', 'spark', 'power bi']",2.0,bac+5,['fr'],it / data
+J0018,"['communication', 'power bi', 'excel', 'machine learning', 'azure', 'presentation', 'sql', 'cloud', 'docker']",1.0,bac+5,['fr'],it / data
+J0019,"['project management', 'communication', 'problem solving', 'strategy', 'data analysis']",0.0,bac+5,"['es', 'fr']",consulting
+J0020,"['risk assessment', 'consolidation', 'accounting', 'power bi', 'communication', 'ifrs', 'financial analysis', 'excel', 'audit']",3.0,bac+5,"['en', 'fr']",audit
+J0021,"['business analysis', 'stakeholder management', 'powerpoint', 'problem solving', 'excel', 'communication', 'market research', 'data analysis', 'presentation']",4.0,bac+5,['fr'],consulting
+J0022,"['teamwork', 'excel', 'communication', 'stakeholder management', 'presentation', 'market research', 'data analysis']",1.0,bac+5,['fr'],consulting
+J0023,"['consolidation', 'excel', 'due diligence', 'audit', 'accounting', 'internal control']",1.0,bac+5,"['en', 'fr']",audit
+J0024,"['recherche marche', 'communication', 'powerpoint', 'business analysis', 'presentation']",2.0,bac+5,"['es', 'fr']",consulting
+J0025,"['excel', 'git', 'communication', 'data analysis', 'power bi', 'sql', 'docker', 'aws', 'spark']",0.0,bac+5,"['en', 'fr']",it / data
+J0026,"['project management', 'excel', 'stakeholder management', 'powerpoint', 'teamwork']",2.0,bac+5,['en'],consulting
+J0027,"['power bi', 'teamwork', 'data engineering', 'git', 'sql', 'python']",5.0,bac+3,['ar'],it / data
+J0028,"['excel', 'due diligence', 'internal control', 'communication', 'audit', 'financial analysis', 'teamwork', 'ifrs']",0.0,bac+5,"['en', 'fr']",audit
+J0029,"['internal cntrol', 'consolidation', 'risk assessment', 'ifrs', 'financial analysis', 'communication', 'teamwork', 'presentation', 'power bi', 'due diligence']",2.0,bac+5,"['es', 'fr']",audit
+J0030,"['presentation', 'git', 'aws', 'python', 'sql', 'machine learning', 'cloud', 'excel', 'spark', 'azure']",0.0,bac+4,"['en', 'fr']",it / data
+J0031,"['presentation', 'communicaion', 'git', 'sql', 'machine learning', 'power bi', 'cloud', 'aws', 'azure', 'docker']",0.0,bac+5,['fr'],it / data
+J0032,"['excel', 'stakeholder management', 'data analysis', 'problem solving', 'communication', 'market research']",0.0,bac+5,['en'],consulting
+J0033,"['data analysis', 'stakeholder management', 'communication', 'presentation', 'excel', 'market research', 'strategy']",1.0,bac+5,['fr'],consulting
+J0034,"['machine learning', 'power bi', 'data analysis', 'data engineering', 'communication', 'azure']",0.0,bac+5,"['es', 'fr']",it / data
+J0035,"['data analysis', 'communication', 'problem solving', 'business analysis']",3.0,bac+5,['fr'],consulting
+J0036,"['ifrs', 'sap', 'accounting', 'excel', 'financial analysis']",0.0,bac+5,"['en', 'fr']",audit
+J0037,"['data analysis', 'communication', 'problem solving', 'excel', 'market research']",3.0,bac+5,"['es', 'fr']",consulting
+J0038,"['docker', 'spak', 'excel', 'azure', 'python', 'aws', 'power bi', 'data analysis', 'teamwork']",5.0,bac+3,['ar'],it / data
+J0039,"['presentation', 'due diligence', 'audit', 'financial analysis']",4.0,bac+4,"['en', 'fr']",audit
+J0040,"['data analysis', 'strategy', 'market research', 'project management']",1.0,bac+5,"['en', 'fr']",consulting
+J0041,"['powerpoint', 'communication', 'excel', 'strategy', 'data analysis', 'market research', 'teamwork']",0.0,bac+5,"['en', 'fr']",consulting
+J0042,"['internal control', 'power bi', 'teamwork', 'financial analysis', 'accounting', 'consolidation', 'due diligence', 'data analysis', 'audit', 'presentation']",2.0,bac+5,['fr'],audit
+J0043,"['data analysis', 'communication', 'power bi', 'azure', 'sql', 'spark']",0.0,bac+3,['en'],it / data
+J0044,"['sap', 'presentation', 'risk assessment', 'teamwork', 'power bi', 'accounting', 'excel']",0.0,bac+5,"['es', 'fr']",audit
+J0045,"['project management', 'data analysis', 'strategy', 'powerpoint', 'business analysis']",0.0,bac+5,"['en', 'es']",consulting
+J0046,"['excel', 'accounting', 'power bi', 'audit', 'data analysis', 'sap', 'internal control', 'due diligence']",0.0,bac+5,['es'],audit
+J0047,"['teamwork', 'presentation', 'stakeholder management', 'excel', 'communication', 'market research', 'data analysis', 'business analysis', 'problem solving']",0.0,bac+5,['en'],consulting
+J0048,"['git', 'cloud', 'presentation', 'machine learning', 'docker', 'azure', 'sql', 'power bi', 'data engineering']",1.0,bac+3,['en'],it / data
+J0049,"['azure', 'sql', 'python', 'power bi', 'docker', 'communication']",5.0,bac+5,['en'],it / data
+J0050,"['power bi', 'financial analysis', 'data analysis', 'internal control']",0.0,bac+5,"['en', 'fr']",audit
+J0051,"['azure', 'docker', 'spark', 'data engineering', 'aws', 'communication', 'python', 'teamwork']",3.0,bac+3,"['es', 'fr']",it / data
+J0052,"['excel', 'data analysis', 'due diligence', 'presentation', 'audit', 'power bi', 'consolidation', 'financial analysis', 'risk assessment']",3.0,bac+5,['en'],audit
+J0053,"['due diligence', 'audit', 'excel', 'ifrs', 'communication', 'internal control', 'data analysis', 'sap']",1.0,bac+4,['fr'],audit
+J0054,"['accounting', 'presentation', 'excel', 'data analysis', 'financial analysis', 'teamwork', 'power bi', 'consolidation']",0.0,bac+4,['en'],audit
+J0055,"['consolidation', 'presentation', 'due diligence', 'financial analysis', 'excel', 'data analysis', 'internal control', 'teamwork']",2.0,bac+5,['fr'],audit
+J0056,"['python', 'presentation', 'spark', 'teamwork', 'data engineering', 'excel', 'azure', 'machine learning', 'docker', 'communication']",2.0,bac+3,"['en', 'fr']",it / data
+J0057,"['communication', 'project management', 'business analysis', 'powerpoint', 'data analysis', 'microsoft excel', 'presentation', 'problem solving', 'market research', 'stakeholder management']",0.0,bac+5,['fr'],consulting
+J0058,"['consolidation', 'internal control', 'audit', 'presentation', 'data analysis', 'financial analysis', 'ifrs', 'risk assessment', 'power bi', 'communication']",4.0,bac+5,"['en', 'fr']",audit
+J0059,"['stakeholder management', 'business analysis', 'communication', 'powerpoint']",2.0,bac+5,"['en', 'fr']",consulting
+J0060,"['project management', 'powerpoint', 'data analysis', 'business analysis', 'stakeholder management', 'communication', 'problem solving', 'excel']",2.0,bac+5,['fr'],consulting
+J0061,"['data analysis', 'excel', 'audit', 'financial analysis', 'due diligence', 'risk assessment']",4.0,bac+5,"['ar', 'fr']",audit
+J0062,"['sql', 'excel', 'data engineering', 'communication']",1.0,bac+5,"['es', 'fr']",it / data
+J0063,"['excel', 'presentation', 'powerpoint', 'communication', 'teamwork', 'business analysis', 'stakeholder management', 'project management', 'problem solving']",1.0,bac+5,"['es', 'fr']",consulting
+J0064,"['presentation', 'financial analysis', 'accounting', 'audit', 'sap', 'due diligence', 'data analysis', 'internal control']",3.0,bac+5,['fr'],audit
+J0065,"['teamwork', 'financial analysis', 'excel', 'consolidation', 'power bi']",1.0,bac+4,"['en', 'fr']",audit
+J0066,"['due diligence', 'excel', 'sap', 'risk assessment', 'presentation', 'audit', 'accounting']",1.0,bac+5,"['en', 'fr']",audit
+J0067,"['excel', 'communication', 'data anaysis', 'data analysis', 'teamwork', 'market research', 'project management', 'stakeholder management']",2.0,bac+5,"['en', 'fr']",consulting
+J0068,"['audit', 'teamwork', 'presentation', 'power bi', 'sap', 'data analysis', 'internal control', 'excel', 'financial analysis', 'communication']",2.0,bac+5,['es'],audit
+J0069,"['data analysis', 'aws', 'sql', 'communication', 'git']",1.0,bac+3,"['en', 'fr']",it / data
+J0070,"['risk assessment', 'power bi', 'presentation', 'accounting']",2.0,bac+5,['fr'],audit
+J0071,"['data analysis', 'communication', 'accounting', 'risk assessment', 'controle interne', 'consolidation', 'audit', 'ifrs', 'financial analysis']",2.0,bac+5,['fr'],audit
+J0072,"['communication', 'stakeholder management', 'teamwork', 'strategy', 'project management', 'excel']",3.0,bac+5,"['en', 'fr']",consulting
+J0073,"['sap', 'power bi', 'ifrs', 'consolidation', 'internal control', 'audit']",1.0,bac+5,"['en', 'fr']",audit
+J0074,"['data analysis', 'git', 'cloud', 'python', 'sql', 'excel', 'presentation', 'communication', 'machine learning']",2.0,bac+5,"['en', 'fr']",it / data
+J0075,"['excel', 'presentation', 'teamwork', 'communication', 'project management']",0.0,bac+5,"['en', 'fr']",consulting
+J0076,"['strategy', 'data analysis', 'problem solving', 'presentation', 'teamwork', 'market research', 'excel', 'business analysis', 'communication']",4.0,bac+5,"['en', 'fr']",consulting
+J0077,"['data analysis', 'azure', 'microsoft excel', 'machine learning', 'python', 'teamwork']",4.0,bac+3,['fr'],it / data
+J0078,"['consolidation', 'financial analysis', 'presentation', 'teamwork']",2.0,bac+5,"['en', 'es']",audit
+J0079,"['aws', 'machine leraning', 'spark', 'teamwork', 'sql', 'python', 'data engineering']",2.0,bac+5,['fr'],it / data
+J0080,"['power bi', 'excel', 'data analysis', 'presentation', 'financial analysis', 'risk assessment', 'consolidation', 'accounting']",4.0,bac+5,['es'],audit
+J0081,"['market research', 'data analysis', 'excel', 'project management', 'business analysis']",2.0,bac+4,"['en', 'fr']",consulting
+J0082,"['machine learning', 'python', 'excel', 'sql', 'presentation', 'git']",0.0,bac+5,"['en', 'fr']",it / data
+J0083,"['spark', 'aws', 'machine learning', 'cloud', 'python', 'data analysis', 'communication', 'docker']",0.0,bac+4,"['en', 'fr']",it / data
+J0084,"['data analysis', 'spark', 'sql', 'cloud', 'teamwork', 'presentation', 'aws', 'excel', 'power bi']",4.0,bac+5,['fr'],it / data
+J0085,"['project management', 'powerpoint', 'presentation', 'teamwork', 'communication', 'business analysis']",2.0,bac+5,"['en', 'fr']",consulting
+J0086,"['financial analysis', 'data analysis', 'accounting', 'due diligence', 'communication', 'audit', 'consolidation', 'excel']",0.0,bac+4,['en'],audit
+J0087,"['accounting', 'excel', 'data analysis', 'ifrs', 'communication', 'risk assessment']",0.0,bac+4,['en'],audit
+J0088,"['sap', 'teamwork', 'communication', 'presentation', 'power bi', 'accounting', 'excel', 'ifrs', 'audit']",1.0,bac+5,['fr'],audit
+J0089,"['teamwork', 'consolidation', 'financial analysis', 'communication']",0.0,bac+5,['fr'],audit
+J0090,"['accounting', 'presentation', 'financial analysis', 'risk assessment', 'consolidation', 'internal control', 'excel']",4.0,bac+5,"['es', 'fr']",audit
+J0091,"['presentation', 'audit', 'due diligence', 'power bi', 'consolidation', 'sap', 'risk assessment']",2.0,bac+5,"['en', 'fr']",audit
+J0092,"['consolidation', 'teamwork', 'analysis financiere', 'excel', 'ifrs']",3.0,bac+5,['fr'],audit
+J0093,"['audit', 'power bi', 'consolidation', 'teamwork', 'accounting', 'presentation', 'ifrs']",2.0,bac+5,"['en', 'fr']",audit
+J0094,"['presentation', 'sap', 'teamwork', 'audit', 'consolidation', 'ifrs', 'data analysis']",1.0,bac+5,['en'],audit
+J0095,"['problem solving', 'presentation', 'data analysis', 'powerpoint', 'excel', 'stakeholder management', 'business analysis']",2.0,bac+4,['es'],consulting
+J0096,"['teamwork', 'powerpoint', 'business analysis', 'communication']",1.0,bac+5,"['en', 'fr']",consulting
+J0097,"['financial analysis', 'communication', 'consolidation', 'internal control', 'accounting', 'risk assessment', 'sap', 'data analysis', 'presentation']",1.0,bac+5,"['es', 'fr']",audit
+J0098,"['communication', 'accounting', 'excel', 'risk assessment', 'due diligence', 'data analysis', 'sap', 'financial analysis', 'teamwork', 'ifrs']",0.0,bac+5,['fr'],audit
+J0099,"['communication', 'presentation', 'excel', 'problem solving', 'project management', 'business analysis', 'teamwork', 'powerpoint']",2.0,bac+5,['es'],consulting
+J0100,"['audit', 'presentation', 'excel', 'power bi', 'teamwork', 'consolidation', 'financial analysis']",0.0,bac+5,['fr'],audit
+J0101,"['power bi', 'risk assessment', 'data analysis', 'due diligence', 'accounting', 'excel', 'financial analysis', 'consolidation', 'teamwork', 'audit']",0.0,bac+5,['fr'],audit
+J0102,"['project management', 'market research', 'excel', 'strategy', 'presentation', 'data analysis']",2.0,bac+5,"['es', 'fr']",consulting
+J0103,"['accounting', 'excel', 'internal control', 'presentation']",0.0,bac+5,"['en', 'fr']",audit
+J0104,"['sap', 'consolidation', 'risk assessment', 'presentation', 'power bi', 'ifrs', 'teamwork']",2.0,bac+4,['fr'],audit
+J0105,"['teamwork', 'internal control', 'data analysis', 'sap', 'due diligence', 'financial analysis', 'risk assessment', 'communication', 'power bi', 'audit']",1.0,bac+5,['fr'],audit
+J0106,"['azure', 'python', 'excel', 'cloud', 'power bi', 'presentation']",2.0,bac+4,['fr'],it / data
+J0107,"['azure', 'communication', 'data analysis', 'python', 'data engineering', 'teamwork']",2.0,bac+3,"['en', 'fr']",it / data
+J0108,"['audit', 'data analysis', 'communication', 'excel']",2.0,bac+5,"['en', 'fr']",audit
+J0109,"['ifrs', 'excel', 'consolidation', 'presentation', 'sap', 'controle interne', 'power bi']",1.0,bac+5,"['en', 'fr']",audit
+J0110,"['excel', 'business analysis', 'data analysis', 'powerpoint', 'strategy', 'presentation', 'communication', 'teamwork', 'project management']",3.0,bac+5,"['es', 'fr']",consulting
+J0111,"['power bi', 'ifrs', 'excel', 'financial analysis', 'teamwork', 'internal control', 'audit', 'consolidation']",3.0,bac+5,['fr'],audit
+J0112,"['audit', 'communication', 'due diligence', 'excel', 'data analysis', 'power bi', 'accounting', 'internal control', 'consolidation']",4.0,bac+5,"['en', 'fr']",audit
+J0113,"['due diligence', 'financial analsyis', 'audit', 'accounting', 'risk assessment', 'consolidation', 'excel', 'internal control', 'sap']",1.0,bac+5,"['en', 'fr']",audit
+J0114,"['consolidation', 'audit', 'excel', 'accountng', 'communication', 'financial analysis', 'presentation', 'risk assessment', 'sap']",0.0,bac+5,"['en', 'fr']",audit
+J0115,"['market research', 'powerpoint', 'communication', 'presentation', 'business analysis', 'strategy', 'excel', 'teamwork', 'project management', 'stakeholder management']",4.0,bac+5,"['en', 'fr']",consulting
+J0116,"['presentation', 'data analysis', 'sap', 'financial analysis']",3.0,bac+5,"['en', 'fr']",audit
+J0117,"['excel', 'project management', 'communication', 'teamwork', 'presentation']",1.0,bac+5,['fr'],consulting
+J0118,"['due diligence', 'consolidation', 'risk assessment', 'financial analysis', 'presentation', 'internal control']",0.0,bac+5,"['en', 'fr']",audit
+J0119,"['data analysis', 'git', 'spark', 'cloud', 'presenttaion']",2.0,bac+3,"['en', 'es']",it / data
+J0120,"['teamwork', 'data analysis', 'presentation', 'communication', 'excel', 'financial analysis', 'sap', 'accounting', 'risk assessment']",3.0,bac+5,"['en', 'fr']",audit
+J0121,"['internal control', 'consolidation', 'due diligence', 'excel', 'risk assessment', 'sap']",4.0,bac+5,"['ar', 'en']",audit
+J0122,"['consolidation', 'excel', 'accounting', 'presentation']",2.0,bac+5,"['en', 'fr']",audit
+J0123,"['excel', 'teamwork', 'strategy', 'market research', 'presentation', 'project management']",2.0,bac+4,['es'],consulting
+J0124,"['python', 'teamwork', 'presentation', 'data engineering', 'power bi', 'sql']",5.0,bac+4,"['en', 'fr']",it / data
+J0125,"['power bi', 'aws', 'excel', 'teamwork', 'data engineering', 'docker']",3.0,bac+4,['fr'],it / data
+J0126,"['communication', 'market research', 'powerpoint', 'stakeholder management', 'strategy', 'project management', 'data analysis', 'presentation']",2.0,bac+5,"['en', 'fr']",consulting
+J0127,"['communication', 'audit', 'due diligence', 'presentation', 'teamwork', 'power bi']",2.0,bac+5,['en'],audit
+J0128,"['teamwork', 'strategy', 'powerpoint', 'data analysis', 'presentation', 'communication', 'excel']",3.0,bac+5,['fr'],consulting
+J0129,"['due diligence', 'ifrs', 'data analysis', 'presentation', 'power bi', 'excel', 'internal control', 'consolidation', 'financial analysis']",0.0,bac+5,"['en', 'fr']",audit
+J0130,"['ifrs', 'data analysis', 'communication', 'audit', 'financial analysis', 'teamwork', 'consolidation', 'sap', 'excel']",3.0,bac+5,['fr'],audit
+J0131,"['excel', 'due diligence', 'financial analysis', 'sap', 'power bi', 'risk assessment', 'presentation']",1.0,bac+4,"['en', 'fr']",audit
+J0132,"['accounting', 'audit', 'sap', 'consolidation', 'data analysis', 'excel', 'teamwork', 'due diligence', 'financial analysis']",3.0,bac+5,['fr'],audit
+J0133,"['excel', 'data analysis', 'business analysis', 'projet management', 'teamwork', 'market research', 'stakeholder management']",2.0,bac+5,"['en', 'fr']",consulting
+J0134,"['communication', 'audit', 'intrenal control', 'excel', 'accounting', 'data analysis', 'sap']",2.0,bac+5,"['en', 'fr']",audit
+J0135,"['financial analysis', 'excel', 'due diligence', 'internal control', 'consolidation']",2.0,bac+5,"['en', 'fr']",audit
+J0136,"['ifrs', 'excel', 'accounting', 'teamwork', 'sap', 'audit']",1.0,bac+5,['en'],audit
+J0137,"['audit', 'risk assessment', 'internal control', 'financial analysis', 'presentation', 'power bi', 'consolidation']",0.0,bac+5,"['en', 'fr']",audit
+J0138,"['communication', 'powerpoint', 'stakeholder management', 'data analysis', 'presentation', 'project management', 'excel']",4.0,bac+5,"['ar', 'fr']",consulting
+J0139,"['git', 'docker', 'python', 'azure', 'communication', 'data engineering', 'teamwork']",3.0,bac+3,"['en', 'fr']",it / data
+J0140,"['audit', 'financial analysis', 'due diligence', 'ifrs', 'accounting', 'excel', 'internal control', 'presentation', 'communication']",1.0,bac+5,"['es', 'fr']",audit
+J0141,"['analysis financiere', 'excle', 'audit', 'ifrs', 'consolidation', 'internal control', 'data analysis', 'sap', 'excel']",2.0,bac+5,['en'],audit
+J0142,"['consolidation', 'due diligence', 'internal control', 'audit', 'financial analysis']",0.0,bac+5,"['en', 'fr']",audit
+J0143,"['problem solving', 'communication', 'business analysis', 'excel', 'strategy', 'presentation', 'data analysis']",4.0,bac+5,['en'],consulting
+J0144,"['sap', 'communication', 'due diligence', 'data analysis', 'internal control', 'teamwork', 'excel', 'audit']",2.0,bac+5,['en'],audit
+J0145,"['sap', 'internal control', 'risk assessment', 'consolidation', 'excel', 'ifrs', 'due diligence', 'presentation', 'audit']",3.0,bac+5,"['es', 'fr']",audit
+J0146,"['spark', 'sql', 'azure', 'teamwork']",0.0,bac+5,['fr'],it / data
+J0147,"['data analysis', 'azure', 'communication', 'git', 'power bi', 'docker', 'machine learning', 'aws']",0.0,bac+3,['en'],it / data
+J0148,"['data analysis', 'teamwork', 'strategy', 'communication', 'excel', 'market research']",4.0,bac+5,"['en', 'fr']",consulting
+J0149,"['power bi', 'excel', 'internal control', 'accounting', 'consolidation', 'ifrs', 'presentation', 'data analysis', 'risk assessment', 'sap']",0.0,bac+5,['fr'],audit
+J0150,"['data engineering', 'sql', 'azure', 'python', 'data analysis', 'aws', 'teamwork', 'git']",0.0,bac+5,"['es', 'fr']",it / data
+J0151,"['ifrs', 'sap', 'audit', 'accounting', 'financial analysis', 'presnetation', 'internal control', 'risk assessment']",1.0,bac+5,['fr'],audit
+J0152,"['data analysis', 'gestion de projet', 'market research', 'excel', 'powerpoint']",2.0,bac+5,['fr'],consulting
+J0153,"['presentation', 'sql', 'cloud', 'docker', 'aws', 'communication']",4.0,bac+4,['ar'],it / data
+J0154,"['financial analysis', 'excel', 'internal control', 'consolidation', 'commnuication', 'data analysis', 'ifrs', 'accounting', 'power bi']",4.0,bac+5,"['ar', 'es']",audit
+J0155,"['project management', 'powerpoint', 'problem solving', 'strategy', 'data analysis', 'communication', 'recherche marche']",3.0,bac+5,"['en', 'fr']",consulting
+J0156,"['data analysis', 'business analysis', 'strategy', 'problem solving']",1.0,bac+5,['fr'],consulting
+J0157,"['presentation', 'sap', 'teamwork', 'accounting', 'due diligence', 'internal control', 'excel', 'risk assessment', 'communication', 'audit']",4.0,bac+5,"['en', 'fr']",audit
+J0158,"['power bi', 'python', 'communication', 'azure', 'presentation', 'docker', 'data engineering', 'sql', 'cloud']",3.0,bac+3,"['es', 'fr']",it / data
+J0159,"['cloud', 'presentation', 'machine learning', 'azure', 'power bi']",0.0,bac+5,"['en', 'fr']",it / data
+J0160,"['market research', 'stakeholder management', 'communication', 'data analysis', 'strategy', 'teamwork']",0.0,bac+5,['es'],consulting
+J0161,"['data analysis', 'audit', 'consolidation', 'sap', 'teamwork', 'accounting', 'power bi']",0.0,bac+5,['fr'],audit
+J0162,"['audit', 'consolidation', 'ifrs', 'internal control', 'presentation', 'communication', 'data analysis', 'due diligence', 'sap']",0.0,bac+5,"['es', 'fr']",audit
+J0163,"['market research', 'teamwork', 'powerpoint', 'business analysis', 'project management', 'presentation']",3.0,bac+5,"['en', 'fr']",consulting
+J0164,"['ifrs', 'accounting', 'due diligence', 'risk assessment', 'sap', 'internal control', 'communication', 'audit']",1.0,bac+5,"['en', 'fr']",audit
+J0165,"['sap', 'due diligence', 'consolidation', 'data analysis']",1.0,bac+5,['en'],audit
+J0166,"['communication', 'accounting', 'consolidation', 'risk assessment', 'due diligence', 'excel', 'teamwork', 'internal control']",3.0,bac+5,['fr'],audit
+J0167,"['cloud', 'sql', 'excel', 'git', 'python', 'power bi', 'aws', 'spark', 'machine learning']",4.0,bac+4,"['es', 'fr']",it / data
+J0168,"['problem solving', 'excel', 'presentation', 'data analysis']",1.0,bac+5,['en'],consulting
+J0169,"['consolidation', 'teamwork', 'excel', 'due diligence', 'sap', 'financial analysis', 'presentation', 'ifrs', 'risk assessment']",2.0,bac+5,"['en', 'fr']",audit
+J0170,"['spark', 'data analysis', 'machine learning', 'cloud', 'teamwork', 'sql', 'git', 'azure', 'docker', 'presentation']",2.0,bac+3,['en'],it / data
+J0171,"['stakeholder management', 'business analysis', 'excel', 'market research', 'strategy', 'project management', 'data analysis']",0.0,bac+5,"['es', 'fr']",consulting
+J0172,"['business analysis', 'data analysis', 'strategy', 'powerpoint', 'project management', 'communication', 'excel', 'stakeholder management']",1.0,bac+5,"['en', 'fr']",consulting
+J0173,"['cloud', 'python', 'communication', 'teamwork', 'sql', 'data engineering', 'docke', 'aws', 'spark', 'power bi']",2.0,bac+5,['es'],it / data
+J0174,"['communication', 'exel', 'sap', 'power bi', 'due diligence', 'accounting', 'consolidation', 'internal control']",3.0,bac+5,['fr'],audit
+J0175,"['risk assessment', 'internal control', 'sap', 'audit', 'ifrs', 'accounting', 'excel', 'data analysis', 'power bi']",0.0,bac+5,['fr'],audit
+J0176,"['excel', 'communication', 'teamwork', 'market research', 'stakeholder management', 'data analysis', 'problem solving', 'strategy']",4.0,bac+5,['fr'],consulting
+J0177,"['data analysis', 'communication', 'market research', 'teamwork', 'strategy', 'presentation', 'problem solving', 'excel']",1.0,bac+5,"['en', 'fr']",consulting
+J0178,"['strategy', 'teamwork', 'excel', 'presentation', 'powerpoint', 'communication']",3.0,bac+5,"['en', 'fr']",consulting
+J0179,"['teamwork', 'ifrs', 'presentation', 'due diligence', 'data analysis', 'consolidation', 'sap', 'excel']",0.0,bac+5,['fr'],audit
+J0180,"['sap', 'consolidation', 'internal control', 'risk assessment', 'data analysis']",0.0,bac+5,"['en', 'fr']",audit
+J0181,"['docker', 'python', 'excel', 'teamwork', 'data engineering', 'spark', 'apprentissage automatique', 'sql']",2.0,bac+4,"['en', 'fr']",it / data
+J0182,"['sap', 'consolidation', 'power bi', 'communication', 'ifrs', 'excel', 'due diligence', 'data analysis']",0.0,bac+5,['en'],audit
+J0183,"['data analysis', 'presentation', 'strategy', 'powerpoint', 'problem solving', 'teamwork']",2.0,bac+5,['fr'],consulting
+J0184,"['due diligence', 'teamwork', 'ifrs', 'sap', 'power bi', 'risk assessment', 'accounting', 'financial analysis', 'excel', 'communication']",1.0,bac+5,['en'],audit
+J0185,"['risk assessment', 'excel', 'internal control', 'data analysis', 'consolidation', 'sap']",4.0,bac+5,"['en', 'fr']",audit
+J0186,"['data engineering', 'cloud', 'teamwork', 'machine learning', 'excel', 'sql']",4.0,bac+5,"['en', 'fr']",it / data
+J0187,"['audit', 'excel', 'power bi', 'risk assessment', 'due diligence', 'communication', 'consolidation']",0.0,bac+5,['fr'],audit
+J0188,"['excel', 'communication', 'problem solving', 'strategy', 'powerpoint', 'data analysis', 'teamwork', 'market research']",1.0,bac+5,['fr'],consulting
+J0189,"['presentation', 'due diligence', 'risk assessment', 'consolidation']",0.0,bac+5,"['en', 'fr']",audit
+J0190,"['powerpoint', 'problem solving', 'excel', 'strategy', 'teamwork', 'communication']",3.0,bac+5,['fr'],consulting
+J0191,"['data analysis', 'sql', 'communication', 'azure']",2.0,bac+5,['fr'],it / data
+J0192,"['due diligence', 'excel', 'data analysis', 'teamwork']",1.0,bac+5,"['en', 'fr']",audit
+J0193,"['sql', 'power bi', 'docker', 'git', 'data analysis', 'communication', 'aws']",0.0,bac+3,"['en', 'fr']",it / data
+J0194,"['communication', 'excel', 'due diligence', 'consolidation', 'teamwork', 'accounting']",4.0,bac+5,"['en', 'fr']",audit
+J0195,"['teamwork', 'git', 'excel', 'communication', 'data engineering', 'python', 'docker', 'data analysis', 'machine learning']",0.0,bac+3,['en'],it / data
+J0196,"['ifrs', 'risk assessment', 'excel']",3.0,bac+5,['fr'],audit
+J0197,"['docker', 'data analysis', 'sql', 'excel', 'power bi']",3.0,bac+5,"['ar', 'fr']",it / data
+J0198,"['communication', 'business analysis', 'data analysis', 'excel', 'market research', 'strategy', 'presentation', 'powerpoint']",1.0,bac+5,"['es', 'fr']",consulting
+J0199,"['due diligence', 'data analysis', 'financial analysis', 'teamwork', 'risk assessment', 'communication']",2.0,bac+5,['en'],audit
+J0200,"['audit', 'due diligence', 'financial analysis', 'consolidation', 'risk assessment', 'ifrs', 'communication', 'teamwork', 'power bi']",0.0,bac+5,['fr'],audit
