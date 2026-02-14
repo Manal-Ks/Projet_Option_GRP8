@@ -1,7 +1,7 @@
 import pandas as pd
-from ats_scoring.schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
-from ats_scoring.preprocessing import preprocess_candidates, preprocess_jobs
-from ats_scoring.pairing import build_pairs_cartesian
+from schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
+from preprocessing import preprocess_candidates, preprocess_jobs
+from pairing import build_pairs_cartesian
 
 def test_schema_and_preprocess():
     df_cv = pd.DataFrame([{
