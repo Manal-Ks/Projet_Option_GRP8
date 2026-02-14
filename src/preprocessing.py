@@ -3,6 +3,7 @@ import re
 import unicodedata
 from typing import Any, List
 import pandas as pd
+import ast
 
 _SPLIT_PATTERN = re.compile(r"[;,|/]+")
 
@@ -18,17 +19,40 @@ def normalize_text(x: Any) -> str:
     s = re.sub(r"\s+", " ", s)
     return s
 
+
 def to_list(x: Any) -> List[str]:
+    """
+    Robust list parser:
+    - list[str] -> normalize items
+    - "a,b;c|d" -> split
+    - "['a','b']" -> parsed via ast.literal_eval
+    - None/NaN -> []
+    """
     if x is None or (isinstance(x, float) and pd.isna(x)):
         return []
+
+    # already a list
     if isinstance(x, list):
         items = x
+
     else:
         s = str(x).strip()
         if not s:
             return []
-        s = s.strip("[](){}")
-        items = _SPLIT_PATTERN.split(s)
+
+        # try python-list-like string
+        if (s.startswith("[") and s.endswith("]")) or (s.startswith("(") and s.endswith(")")):
+            try:
+                parsed = ast.literal_eval(s)
+                if isinstance(parsed, list):
+                    items = parsed
+                else:
+                    items = [parsed]
+            except Exception:
+                s = s.strip("[](){}")
+                items = _SPLIT_PATTERN.split(s)
+        else:
+            items = _SPLIT_PATTERN.split(s)
 
     normed = []
     for it in items:
@@ -43,6 +67,7 @@ def to_list(x: Any) -> List[str]:
             seen.add(t)
             out.append(t)
     return out
+
 
 def preprocess_candidates(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
