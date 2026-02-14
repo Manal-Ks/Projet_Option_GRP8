@@ -9,3 +9,7 @@ def build_pairs_cartesian(df_candidates: pd.DataFrame, df_jobs: pd.DataFrame) ->
     pairs = c.merge(j, on="_key", how="inner").drop(columns=["_key"])
     return pairs
 
+
+def build_pairs_filtered_same_sector(df_candidates: pd.DataFrame, df_jobs: pd.DataFrame) -> pd.DataFrame:
+    return df_candidates.merge(df_jobs, left_on="sector", right_on="required_sector", how="inner")
+
