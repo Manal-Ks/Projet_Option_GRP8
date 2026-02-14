@@ -23,6 +23,8 @@ def test_schema_and_preprocess():
     }])
 
     df_cv = validate_and_coerce(df_cv, CANDIDATE_SCHEMA, "candidates")
+
+    
     df_job = validate_and_coerce(df_job, JOB_SCHEMA, "jobs")
 
     df_cv2 = preprocess_candidates(df_cv)
@@ -76,4 +78,11 @@ def test_pairing_cartesian_shape():
     pairs = build_pairs_cartesian(df_cv, df_job)
     assert len(pairs) == 6
     assert "candidate_id" in pairs.columns and "job_id" in pairs.columns
+
+
+def test_to_list_parses_python_list_string():
+    import pandas as pd
+    from preprocessing import to_list
+    assert to_list("['Audit', 'Excel']") == ["audit", "excel"]
+
 
