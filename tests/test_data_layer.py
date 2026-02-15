@@ -1,7 +1,7 @@
 import pandas as pd
-from schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
-from preprocessing import preprocess_candidates, preprocess_jobs
-from pairing import build_pairs_cartesian
+from src.schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
+from src.preprocessing import preprocess_candidates, preprocess_jobs
+from src.pairing import build_pairs_cartesian
 
 def test_schema_and_preprocess():
     df_cv = pd.DataFrame([{
@@ -82,7 +82,7 @@ def test_pairing_cartesian_shape():
 
 def test_to_list_parses_python_list_string():
     import pandas as pd
-    from preprocessing import to_list
+    from src.preprocessing import to_list
     assert to_list("['Audit', 'Excel']") == ["audit", "excel"]
 
 

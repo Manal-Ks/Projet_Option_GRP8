@@ -1,5 +1,5 @@
 import pandas as pd
-from data_layer import prepare_data_layer
+from src.data_layer import prepare_data_layer
 
 def test_prepare_data_layer_returns_pairs_and_reports():
     df_cv = pd.DataFrame([{

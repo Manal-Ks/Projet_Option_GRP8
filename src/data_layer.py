@@ -1,10 +1,10 @@
 from __future__ import annotations
 import pandas as pd
 
-from schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
-from preprocessing import preprocess_candidates, preprocess_jobs
-from pairing import build_pairs_cartesian, build_pairs_filtered_same_sector
-from data_quality import quality_report_candidates, quality_report_jobs
+from .schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
+from .preprocessing import preprocess_candidates, preprocess_jobs
+from .pairing import build_pairs_cartesian, build_pairs_filtered_same_sector
+from .data_quality import quality_report_candidates, quality_report_jobs
 
 def prepare_data_layer(df_candidates: pd.DataFrame, df_jobs: pd.DataFrame, pairing_mode: str = "cartesian"):
     # 1) validate
@@ -26,3 +26,13 @@ def prepare_data_layer(df_candidates: pd.DataFrame, df_jobs: pd.DataFrame, pairi
         pairs = build_pairs_cartesian(df_candidates, df_jobs)
 
     return pairs, qc, qj
+
+
+def prepare_scoring_layer(pairs_df: pd.DataFrame) -> pd.DataFrame:
+    """Compute and attach subscores to pairs_df and return a dataframe ready for ranking.
+
+    This function does not perform ML scoring; it computes the five subscores as
+    `skills_score`, `experience_score`, `education_score`, `languages_score`, `sector_score`.
+    """
+    from scoring_engine.evaluation import compute_subscores_df
+    return compute_subscores_df(pairs_df)

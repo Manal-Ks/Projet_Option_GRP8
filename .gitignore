@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Coverage
+.coverage
+coverage.xml
+
+# IDEs and editors
+.idea/
+.vscode/
+.vs/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs and local env files
+*.log
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.swp
+
+# results and build artifacts
+results/

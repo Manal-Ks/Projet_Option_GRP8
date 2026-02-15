@@ -8,11 +8,7 @@ from __future__ import annotations
 import os
 import pandas as pd
 
-# If your modules are in src/, ensure src is on sys.path
-import sys
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
-
-from data_layer import prepare_data_layer  # noqa: E402
+from src.data_layer import prepare_data_layer
 
 
 def _read_csv(path: str) -> pd.DataFrame:

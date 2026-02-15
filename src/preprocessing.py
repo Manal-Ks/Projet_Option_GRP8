@@ -4,6 +4,10 @@ import unicodedata
 from typing import Any, List
 import pandas as pd
 import ast
+from .education import normalize_education
+from .languages import normalize_languages
+from .skills import normalize_skills
+from .sector import normalize_sector
 
 _SPLIT_PATTERN = re.compile(r"[;,|/]+")
 
@@ -73,11 +77,18 @@ def preprocess_candidates(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
     out["candidate_id"] = out["candidate_id"].astype(str)
 
-    out["candidate_skills"] = out["candidate_skills"].apply(to_list)
-    out["languages"] = out["languages"].apply(to_list)
+    # skills -> parse list then normalize canonical skill ids
+    out["candidate_skills"] = out["candidate_skills"].apply(to_list).apply(normalize_skills)
 
+    # languages -> parse list then normalize codes
+    out["languages"] = out["languages"].apply(to_list).apply(normalize_languages)
+
+    # education: keep normalized text and add numeric column
     out["education_level"] = out["education_level"].apply(normalize_text)
-    out["sector"] = out["sector"].apply(normalize_text)
+    out["education_level_num"] = out["education_level"].apply(normalize_education)
+
+    # sector -> canonical representation
+    out["sector"] = out["sector"].apply(normalize_sector)
 
     out["years_experience"] = pd.to_numeric(out["years_experience"], errors="coerce").fillna(0.0)
     return out
@@ -86,11 +97,13 @@ def preprocess_jobs(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
     out["job_id"] = out["job_id"].astype(str)
 
-    out["required_skills"] = out["required_skills"].apply(to_list)
-    out["required_languages"] = out["required_languages"].apply(to_list)
+    out["required_skills"] = out["required_skills"].apply(to_list).apply(normalize_skills)
+    out["required_languages"] = out["required_languages"].apply(to_list).apply(normalize_languages)
 
     out["required_education"] = out["required_education"].apply(normalize_text)
-    out["required_sector"] = out["required_sector"].apply(normalize_text)
+    out["required_education_num"] = out["required_education"].apply(normalize_education)
+
+    out["required_sector"] = out["required_sector"].apply(normalize_sector)
 
     out["min_experience"] = pd.to_numeric(out["min_experience"], errors="coerce").fillna(0.0)
     return out

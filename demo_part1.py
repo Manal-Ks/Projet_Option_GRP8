@@ -1,13 +1,11 @@
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
-
 import pandas as pd
 
-from schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
-from preprocessing import preprocess_candidates, preprocess_jobs
-from pairing import build_pairs_cartesian
+from src.schema import validate_and_coerce, CANDIDATE_SCHEMA, JOB_SCHEMA
+from src.preprocessing import preprocess_candidates, preprocess_jobs
+from src.pairing import build_pairs_cartesian
 
 def main():
     # --- Example dummy data (replace with your real fictive dataset later)
