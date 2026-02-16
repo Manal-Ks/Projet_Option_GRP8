@@ -5,3 +5,5 @@ pytest>=7.0
 scikit-learn>=1.2
 streamlit>=1.35
 plotly>=5.18
+psutil>=5.9
+matplotlib>=3.5
