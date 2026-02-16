@@ -171,8 +171,6 @@ Orchestration complète :
 
 ```bash
 # Accédez au répertoire souhaité
-cd "c:\Users\SAMI YOUSSEF\OneDrive\Desktop\Option_3A\"
-
 # Le projet est déjà présent dans : Projet_Option_GRP8/
 cd Projet_Option_GRP8
 ```
