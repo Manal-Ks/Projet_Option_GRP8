@@ -295,6 +295,7 @@ with st.sidebar:
         <div style="font-size:0.6rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.2em;margin-top:6px;">Recrutement</div>
     </div>
     """, unsafe_allow_html=True)
+    
     st.markdown('<span class="sidebar-label">Poste ciblé</span>', unsafe_allow_html=True)
     all_jobs     = sorted(df["job_id"].unique().tolist())
     selected_job = st.selectbox("Poste", all_jobs, label_visibility="collapsed")
@@ -372,11 +373,11 @@ job_df = job_df[job_df["score_live"] >= min_score].sort_values("score_live", asc
 k1, k2, k3, k4 = st.columns(4)
 
 top_match    = job_df["score_live"].max() if len(job_df) > 0 else 0.0
-strong_count = int((job_df["score_live"] >= 0.70).sum())
+strong_count = int((job_df["score_live"] >= 0.85).sum())
 avg_score    = int(job_df["score_live"].mean() * 100) if len(job_df) > 0 else 0
 
 k1.metric("Candidats analysés", f"{len(job_df)}")
-k2.metric("Profils forts  (≥ 70%)", f"{strong_count}")
+k2.metric("Profils forts  (≥ 85%)", f"{strong_count}")
 k3.metric("Meilleur score", f"{top_match*100:.2f}%")
 k4.metric("Score moyen", f"{avg_score}%")
 
@@ -405,7 +406,23 @@ with tab1:
     if len(job_df) == 0:
         st.warning("Aucun candidat ne correspond aux critères. Abaissez le score minimum ou modifiez les filtres.")
     else:
-        top_n = st.slider("Nombre de candidats affichés", 5, min(50, len(job_df)), min(15, len(job_df)), key="topn")
+        # Only show slider if there are enough candidates (≥6) to make it useful
+        if len(job_df) >= 6:
+            slider_min = 5
+            slider_max = min(50, len(job_df))
+            slider_default = min(15, len(job_df))
+            
+            top_n = st.slider(
+                "Nombre de candidats affichés",
+                slider_min,
+                slider_max,
+                slider_default,
+                key="topn"
+            )
+        else:
+            # Few candidates: show all without slider
+            top_n = len(job_df)
+            st.info(f"Affichage des {top_n} candidat{'s' if top_n > 1 else ''} correspondant aux critères.")
 
         for rank, (_, row) in enumerate(job_df.head(top_n).iterrows(), start=1):
             s         = row["score_live"]

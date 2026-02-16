@@ -1,0 +1,104 @@
+{
+        "name": "resume_extraction_schema",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "properties": {
+                "linkedin_url": {"type": ["string", "null"]},
+                "name": {"type": "string"},
+                "location": {"type": ["string", "null"]},
+                "about": {"type": ["string", "null"]},
+                "open_to_work": {"type": ["boolean", "null"]},
+                "experiences": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "position_title": {"type": "string"},
+                            "institution_name": {"type": "string"},
+                            "linkedin_url": {"type": ["string", "null"]},
+                            "from_date": {"type": ["string", "null"]},
+                            "to_date": {"type": ["string", "null"]},
+                            "duration": {"type": ["string", "null"]},
+                            "location": {"type": ["string", "null"]},
+                            "description": {"type": ["string", "null"]}
+                        },
+                        "required": [
+                            "position_title", "institution_name", "linkedin_url",
+                            "from_date", "to_date", "duration", "location", "description"
+                        ],
+                        "additionalProperties": False
+                    }
+                },
+                "educations": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "degree": {"type": "string"},
+                            "institution_name": {"type": "string"},
+                            "linkedin_url": {"type": ["string", "null"]},
+                            "from_date": {"type": ["string", "null"]},
+                            "to_date": {"type": ["string", "null"]},
+                            "duration": {"type": ["string", "null"]},
+                            "location": {"type": ["string", "null"]},
+                            "description": {"type": ["string", "null"]}
+                        },
+                        "required": [
+                            "degree", "institution_name", "linkedin_url",
+                            "from_date", "to_date", "duration", "location", "description"
+                        ],
+                        "additionalProperties": False
+                    }
+                },
+                "skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "category": {"type": "string"},
+                            "items": {
+                                "type": "array",
+                                "items": {"type": "string"}
+                            }
+                        },
+                        "required": ["category", "items"],
+                        "additionalProperties": False
+                    }
+                },
+                "projects": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "project_name": {"type": "string"},
+                            "role": {"type": ["string", "null"]},
+                            "from_date": {"type": ["string", "null"]},
+                            "to_date": {"type": ["string", "null"]},
+                            "duration": {"type": ["string", "null"]},
+                            "technologies": {
+                                "type": "array",
+                                "items": {"type": "string"}
+                            },
+                            "description": {"type": ["string", "null"]},
+                            "url": {"type": ["string", "null"]}
+                        },
+                        "required": [
+                            "project_name", "role", "from_date", "to_date", 
+                            "duration", "technologies", "description", "url"
+                        ],
+                        "additionalProperties": False
+                    }
+                },
+                "interests": {"type": "array", "items": {"type": "string"}},
+                "accomplishments": {"type": "array", "items": {"type": "string"}},
+                "contacts": {"type": "array", "items": {"type": "string"}}
+            },
+            "required": [
+                "linkedin_url", "name", "location", "about", "open_to_work",
+                "experiences", "educations", "skills", "projects",
+                "interests", "accomplishments", "contacts"
+            ],
+            "additionalProperties": False
+        }
+    }
