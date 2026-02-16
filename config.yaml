@@ -1,0 +1,21 @@
+pipeline:
+  pairing_mode: "cartesian"            # "cartesian" | "filtered_same_sector"
+  batch_size: 200000                   # pour scorer en chunks si dataset énorme
+  export_dir: "results"
+  export_format: ["csv", "json"]       # tu peux mettre ["csv"] ou ["json"]
+  keep_columns:                        # colonnes à garder en sortie (en + des scores)
+    - candidate_id
+    - job_id
+    - sector
+    - required_sector
+
+scoring:
+  mode: "weighted_subscores"           # "weighted_subscores" | "algo"
+  algo_name: "TOPSIS"                  # WSM | WPM | TOPSIS | LogisticRegression | RandomForest | GradientBoosting
+
+  weights:                             # utilisé si mode=weighted_subscores (somme = 1 recommandé)
+    skills: 0.35
+    experience: 0.20
+    education: 0.15
+    languages: 0.15
+    sector: 0.15
