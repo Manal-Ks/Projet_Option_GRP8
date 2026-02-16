@@ -228,13 +228,13 @@ cd Projet_Option_GRP8
 
 
 
-### Étape 2 : Création + activation venv
+### Étape 3 : Création + activation venv
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\activate
 ```
-# Sur macOS/Linux
+**Sur macOS/Linux :** 
 source .venv/bin/activate
 ### Étape 3 : Upgrade pip + install deps
 
