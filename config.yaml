@@ -10,10 +10,10 @@ pipeline:
     - required_sector
 
 scoring:
-  mode: "weighted_subscores"           # "weighted_subscores" | "algo"
+  mode: "algo"                         # "weighted_subscores" | "algo"
   algo_name: "TOPSIS"                  # WSM | WPM | TOPSIS | LogisticRegression | RandomForest | GradientBoosting
 
-  weights:                             # utilisé si mode=weighted_subscores (somme = 1 recommandé)
+  weights:                             # utilisé pour WSM, WPM, TOPSIS (somme = 1 recommandé)
     skills: 0.35
     experience: 0.20
     education: 0.15

@@ -6,6 +6,7 @@ from typing import Any, Dict, List, Tuple
 
 import pandas as pd
 import yaml
+import numpy as np
 
 from src.data_layer import prepare_data_layer
 from src.aggregate import WeightConfig, make_vector_score, select_output_columns, weighted_global_score
@@ -14,6 +15,15 @@ from src.export import export_csv, export_json
 # IMPORTANT:
 # adapte l'import suivant selon ton fichier réel (le README dit: src/scoring_engine/components/subscores.py)
 from src.scoring_engine.components.subscores import compute_subscores  # doit retourner df avec score_* colonnes
+from src.scoring_engine.algorithms.algorithms import (
+    WSMAlgorithm,
+    WPMAlgorithm,
+    TOPSISAlgorithm,
+    LogisticRegressionAlgorithm,
+    GradientBoostingAlgorithm,
+    RandomForestAlgorithm,
+)
+from src.scoring_engine.config import DEFAULT_WEIGHTS
 
 
 @dataclass
@@ -70,6 +80,54 @@ def _score_in_batches(pairs: pd.DataFrame, batch_size: int) -> pd.DataFrame:
     return pd.concat(chunks, ignore_index=True)
 
 
+def _get_algorithm(algo_name: str, weights: Dict = None):
+    """
+    Crée une instance de l'algorithme choisi.
+    
+    Args:
+        algo_name: Nom de l'algorithme (WSM, WPM, TOPSIS, LogisticRegression, GradientBoosting, RandomForest)
+        weights: Dict de poids pour les algorithmes non-ML
+        
+    Returns:
+        Instance de l'algorithme
+    """
+    w = weights or DEFAULT_WEIGHTS
+    algos = {
+        "WSM": WSMAlgorithm(w),
+        "WPM": WPMAlgorithm(w),
+        "TOPSIS": TOPSISAlgorithm(w),
+        "LogisticRegression": LogisticRegressionAlgorithm(),
+        "GradientBoosting": GradientBoostingAlgorithm(),
+        "RandomForest": RandomForestAlgorithm(),
+    }
+    return algos.get(algo_name, TOPSISAlgorithm(w))
+
+
+def _apply_algorithm_scoring(df: pd.DataFrame, algo_name: str, weights: Dict = None) -> np.ndarray:
+    """
+    Applique l'algorithme choisi pour scorer les paires.
+    
+    Args:
+        df: DataFrame avec subscores (score_skills, score_experience, etc.)
+        algo_name: Nom de l'algorithme
+        weights: Dict de poids
+        
+    Returns:
+        Array de scores
+    """
+    algo = _get_algorithm(algo_name, weights)
+    
+    # Pour les algorithmes non-ML (WSM, WPM, TOPSIS), on appelle directement predict
+    # Pour les algorithmes ML, il faut les entraîner d'abord
+    if algo_name in ["LogisticRegression", "GradientBoosting", "RandomForest"]:
+        # Si on n'a pas de labels, on entraîne sur toutes les données
+        # C'est un workaround pour la prédiction sans ensemble d'entraînement
+        y_dummy = np.zeros(len(df))
+        algo.fit(df, y_dummy)
+    
+    return algo.predict(df)
+
+
 def run(
     df_cv: pd.DataFrame,
     df_jobs: pd.DataFrame,
@@ -96,17 +154,31 @@ def run(
         "jobs": qc_jobs
     }
 
-
     # 2) subscores (skills/exp/edu/lang/sector)
     scored = _score_in_batches(pairs, cfg.batch_size)
 
-    # 3) aggregate
-    scored = make_vector_score(scored)
-    scored = weighted_global_score(scored, cfg.weights)
+    # 3) scoring: soit algorithme, soit somme pondérée
+    if cfg.scoring_mode == "algo":
+        # Appliquer l'algorithme choisi
+        weights_dict = {
+            "score_skills": cfg.weights.skills,
+            "score_experience": cfg.weights.experience,
+            "score_education": cfg.weights.education,
+            "score_languages": cfg.weights.languages,
+            "score_sector": cfg.weights.sector,
+        }
+        algo_scores = _apply_algorithm_scoring(scored, cfg.algo_name, weights_dict)
+        scored["global_score"] = np.clip(algo_scores, 0.0, 1.0)
+    else:
+        # Mode par défaut: somme pondérée
+        scored = make_vector_score(scored)
+        scored = weighted_global_score(scored, cfg.weights)
+
+    # 4) select output columns
     out = select_output_columns(scored, cfg.keep_columns)
 
-    # 4) export
-    meta: Dict[str, Any] = {"quality_report": quality_report, "exports": {}}
+    # 5) export
+    meta: Dict[str, Any] = {"quality_report": quality_report, "exports": {}, "scoring_mode": cfg.scoring_mode, "algo_used": cfg.algo_name if cfg.scoring_mode == "algo" else None}
     if export:
         export_dir = Path(cfg.export_dir)
         if "csv" in (cfg.export_format or []):
